@@ -1,7 +1,54 @@
+/* Estilos para dispositivos de escritorio */
+h2 {
+  text-align: center;
+}
+
+.productos-menu {
+  padding: 0;
+  margin: auto;
+  max-width: 1000px;
+
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+a {
+  background-color: #3f525c;
+  border-radius: 2px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  min-width: 70px;
+  margin: .5rem auto;
+  box-sizing: border-box;
+
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+
+
+
+a:hover {
+  background-color: #000;
+}
  /* Estilos base para todos los tamaños de pantalla */
  body {
   font-family: Arial, sans-serif;
 }
+
+
 
 /* Media query para pantallas grandes (ancho mínimo de 1024px) */
 @media (min-width: 1024px) {
@@ -22,6 +69,14 @@
   }
   nav a:active {
     background-color: black;
+  }
+  a {
+    width: 30%;
+    box-sizing: content-box;
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 33px;
   }
 }
 
@@ -45,6 +100,12 @@
   nav a:active {
     background-color: black;
   }
+  a {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 27px;
+  }
 }
 
 /* Media query para dispositivos móviles (ancho máximo de 767px) */
@@ -67,6 +128,12 @@
   nav a:active {
     background-color: black;
 
+  }
+  a {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 21px;
   }
 }
 

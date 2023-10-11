@@ -1,0 +1,23 @@
+  <h2>Añadir Nuevo Jugador</h2>
+  <div>
+    <div class="entrada">
+      <label for="id">ID:</label>
+      <input type="number" id="id" name="id" [(ngModel)]="nuevoJugador.id" required>
+    </div>
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" [(ngModel)]="nuevoJugador.nombre" required>
+    </div>
+    <div class="form-group">
+      <label for="posicion">Posición:</label>
+      <input type="text" id="posicion" name="posicion" [(ngModel)]="nuevoJugador.posicion" required>
+    </div>
+    <div class="form-group">
+      <label for="image">URL de la Imagen:</label>
+      <input type="text" id="image" name="image" [(ngModel)]="nuevoJugador.image" required>
+    </div>
+    <button (click)="postJugadores()"type="submit">Añadir Jugador</button>
+  </div>
+
+
+

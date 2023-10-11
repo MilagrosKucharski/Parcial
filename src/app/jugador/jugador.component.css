@@ -1,0 +1,68 @@
+/* Estilos base para todos los tamaños de pantalla */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Media query para pantallas grandes (ancho mínimo de 1024px) */
+@media (min-width: 1024px) {
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 50px; /* Tamaño de fuente más grande para títulos en pantallas grandes */
+    color: #000;
+  }
+
+  p {
+    font-size: 36px; /* Tamaño de fuente más grande para párrafos en pantallas grandes */
+    color: #444;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Media query para tabletas (ancho mínimo de 768px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 36px; /* Tamaño de fuente mediano para títulos en tabletas */
+    color: #111;
+  }
+
+  p {
+    font-size: 24px; /* Tamaño de fuente mediano para párrafos en tabletas */
+    color: #333;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Media query para dispositivos móviles (ancho máximo de 767px) */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 24px; /* Tamaño de fuente más pequeño para títulos en dispositivos móviles */
+    color: #222;
+  }
+
+  p {
+    font-size: 20px; /* Tamaño de fuente más pequeño para párrafos en dispositivos móviles */
+    color: #555;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
