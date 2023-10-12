@@ -1,7 +1,7 @@
 <h2>El plantel</h2>
 <div class="plantel-menu">
 
-  <a *ngIf= ""routerLink= "/nuevoJugador">Añadir un jugador</a>
+  <a routerLink= "/nuevoJugador">Añadir un jugador</a>
   <a *ngFor="let jugador of jugadores"
     routerLink="/jugador/{{jugador.id}}">
     {{jugador.nombre}}

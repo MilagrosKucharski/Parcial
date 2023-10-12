@@ -1,11 +1,14 @@
-label {
+p {
   color: #435960;
   font-weight: bold;
+
 }
 input {
   font-size: 1em;
   padding: .5rem;
   display: inline-block;
+  position: relative;
+  padding: 1rem;
 
 }
 button {
